@@ -4,8 +4,8 @@
         require_once __DIR__ . '/src/Facebook/autoload.php';
 
 	$fb = new Facebook\Facebook([
-		'app_id' => '337172026645188',
-		'app_secret' => '8d32afc4cafb4a5bad8566e35bce5aa3',
+		'app_id' => 'APP ID',
+		'app_secret' => 'APP SECRET',
 		'default_graph_version' => 'v2.4',
 	]);
 
@@ -16,7 +16,7 @@ $permissions = ['email','user_likes']; // optional
 
 	// getting basic info about user
 try {
-                $token='EAAEypZCrgWsQBAMAuZBDuEZA1ozGz03OOJZC0qduZCFjInAlZAJ1N7Wd65TBa36T4uyBx8Dex8ew4iZA8EKicuTW5eglkIbkNi91WRVfdQ1jQqazG3zCgswt59QPCVfrwRE3C1nATuZA1qf7bKZCuSIcdf6v8rq2E3eMZD';
+                $token='LONG TERM ACCESS TOKEN';
 		$profile_request = $fb->get('/me/likes?fields=id',$token);
 		$profile = $profile_request->getGraphEdge()->asArray();
                 $id_one=$profile[0][id];
@@ -44,7 +44,6 @@ try {
 		exit;
 	}
 	
-	// printing $profile array on the screen which holds the basic info about user
 	
 
   	// Now you can redirect to another page and use the access token from $_SESSION['facebook_access_token']
