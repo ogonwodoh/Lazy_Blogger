@@ -1,0 +1,23 @@
+/* theme1.css */
+
+body{
+	background-color: #DB7093;
+	font-family: "Palatino Linotype";
+}
+
+#tumblr1,#tumblr2,#tumblr3,#tumblr4,#tumblr5,#tumblr6{
+							height: 40%;
+							width: 20%;
+							border-radius: 30%;
+
+}
+#facebook1,#facebook2,#facebook3{
+				height: 40%;
+				width: 20%;
+				border-radius: 30%;
+
+			}
+a{
+	text-decoration:none;
+}
+		
