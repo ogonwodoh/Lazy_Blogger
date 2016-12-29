@@ -9,5 +9,5 @@ Also, once a day, my application sends out an email to the user asking about a s
 The user responds to the email with an update.<br>
 This update is displayed on my blog.<br>
 
-Next steps:
-Creating an archive and making the actual Android application!
+<strong> Next steps:<em>
+Creating an archive and making the actual Android application!</em> </strong>
