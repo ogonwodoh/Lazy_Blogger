@@ -5,13 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="theme1.css" />
 	</head>
 	<body onload="createHeader()">
- 		//php that contains FB API Data
+ 
 		<?php include 'index.php';
-		?>
-		
-		//elements that will store data from tumblr and facebook apis
+
+?>
+                <?php include 'mail_action.php';
+?>
 		<h1 id="header"> </h1>
 		<center>
+                <p style="font-size:250%"> <?php echo $msg; ?> </p>
 		<img id="tumblr1" src=""/>
 		<img id="tumblr3" src=""/>
 		<img id="facebook1" src="<?php echo $pic1; ?>"/> 
@@ -30,7 +32,7 @@
 			//Get request to tumblr API for photos
 			$.ajax({
 				type: "GET",
-   			 	url: "http://api.tumblr.com/v2/blog/styled-by-black.tumblr.com/posts?api_key=<INSERT API KEY>",
+   			 	url: "http://api.tumblr.com/v2/blog/styled-by-black.tumblr.com/posts?api_key=07bVZDIX17xxgDYYaEm5QqUOvkkycGFc9bivp3w8ga7L83PkaM",
    				dataType: 'jsonp',
 			 	
    			 	success: function(info){
@@ -55,7 +57,7 @@
 			//request liked posts from tumblr API
 			$.ajax({
 				type: "GET",
-   			 	url: "http://api.tumblr.com/v2/blog/ogo-u-didnot.tumblr.com/likes?api_key=<INSERT API KEY>",
+   			 	url: "http://api.tumblr.com/v2/blog/ogo-u-didnot.tumblr.com/likes?api_key=07bVZDIX17xxgDYYaEm5QqUOvkkycGFc9bivp3w8ga7L83PkaM",
    				dataType: 'jsonp',
 			 	
    			 	success: function(info2){
