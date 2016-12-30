@@ -1,8 +1,12 @@
 /* theme1.css */
 
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+
+
 body{
 	background-color: #DB7093;
-	font-family: "Palatino Linotype";
+	font-family: 'Merriweather', serif;
 }
 
 #tumblr1,#tumblr2,#tumblr3,#tumblr4,#tumblr5,#tumblr6{
@@ -20,4 +24,35 @@ body{
 a{
 	text-decoration:none;
 }
-		
+body{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+div.menu2{
+		background-color: #eface0;
+		height: 50px;
+		width: 100%;
+		opacity: 25%;
+		border: 1px black solid;
+		position: fixed;
+                margin:0;
+                padding: 0;
+}	
+ul.menu2{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+}
+li.menu2{
+               display: inline;
+               padding: 50px;
+}
+li.menu2 a{
+               color:black;
+}
+li.menu2 a:hover{
+
+               font-size: 20px;
+
+}
