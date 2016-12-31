@@ -50,11 +50,11 @@
 		<div id="About">
 			<center> <h2> About this application </h2> </center>
 
-			<p> Have you ever wanted to make a blog, but have been too busy to consistenly post, upload pictures, and write? If so, this
+			<p> Have you ever wanted to make a blog, but have been too busy to consistently post, upload pictures, and write? If so, this
 			application is for you as it is a <strong> dynamic, blog maker </strong>. Using REST APIs, it queries your Tumblr, Facebook, and
 			Youtube to see all the posts and pages you've been liking and posting. It then takes this data, and beautifully presents it in a
 			blog format. This page is a prototype of the application (for me, the creator) which will soon be made into an Android application.
-			If you have any suggestions about this application, please let me know! Thanks for visting! </p>
+			If you have any suggestions about this application, please let me know! Thanks for visiting! </p>
 
 		</div>
 		
@@ -72,7 +72,7 @@
 			//Get request to tumblr API for photos
 			$.ajax({
 				type: "GET",
-   			 	url: "http://api.tumblr.com/v2/blog/styled-by-black.tumblr.com/posts?api_key=07bVZDIX17xxgDYYaEm5QqUOvkkycGFc9bivp3w8ga7L83PkaM",
+   			 	url: "http://api.tumblr.com/v2/blog/styled-by-black.tumblr.com/posts?api_key=API_KEY",
    				dataType: 'jsonp',
 			 	
    			 	success: function(info){
