@@ -22,18 +22,25 @@
                 <?php include 'mail_action.php';
 ?>
 
+                <?php include 'google.php';
+?>
+               <br> <br>
+
 		<h1 id="header"> </h1>
 		<center>
                 <p style="font-size:100%"> <?php echo $msg[0]; ?> </p>
 		<img id="tumblr1" src=""/>
+                <iframe id="player2" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
 		<img id="tumblr3" src=""/>
-		<img id="facebook1" src="<?php echo $pic1; ?>" onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic1; ?>'"/> 
+		<a href="<?php echo $first_page_link; ?>" > <img id="facebook1" src="<?php echo $pic1; ?>" onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic1; ?>'"/> </a>
 		<img id="tumblr2" src=""/>
 		<img id="tumblr4" src=""/>
-		<img id="facebook2" src="<?php echo $pic2; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic2; ?>'"/>
+                 <iframe id="player3" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
+		<a href="<?php echo $second_page_link; ?>" > <img id="facebook2" src="<?php echo $pic2; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic2; ?>'"/> </a>
 		<img id="tumblr5" src=""/>
 		<img id="tumblr6" src=""/>
-		<img id="facebook3" src="<?php echo $pic3; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic3; ?>'"/>
+		<a href="<?php echo $third_page_link; ?>" > <img id="facebook3" src="<?php echo $pic3; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic3; ?>'"/></a>
+                <iframe id="player1" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
                 <br>
                 <br>
 
@@ -83,18 +90,6 @@
 					$("#tumblr5").attr("src",img_src5);
 					$("#tumblr6").attr("src",img_src6);
                                      
-   			 	}
-			});
-
-
-			//request liked posts from tumblr API
-			$.ajax({
-				type: "GET",
-   			 	url: "http://api.tumblr.com/v2/blog/ogo-u-didnot.tumblr.com/likes?api_key=07bVZDIX17xxgDYYaEm5QqUOvkkycGFc9bivp3w8ga7L83PkaM",
-   				dataType: 'jsonp',
-			 	
-   			 	success: function(info2){
-					console.log(info2);
    			 	}
 			});
 
@@ -152,6 +147,13 @@
     				});
 			});
 
+                        /* Youtube API */
+                        var vid1_src="https://www.youtube.com/embed/"+"<?php echo $vid1;?>"+"?enablejsapi=1&origin=http://ogonwodoh.com";
+                        $("#player1").attr("src",vid1_src);
+                        var vid2_src="https://www.youtube.com/embed/"+"<?php echo $vid2;?>"+"?enablejsapi=1&origin=http://ogonwodoh.com";
+                        $("#player2").attr("src",vid2_src);
+                        var vid3_src="https://www.youtube.com/embed/"+"<?php echo $vid3;?>"+"?enablejsapi=1&origin=http://ogonwodoh.com";
+                         $("#player3").attr("src",vid3_src);
 		</script>
 	</body>
 
