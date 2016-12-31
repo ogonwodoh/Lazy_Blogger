@@ -5,7 +5,7 @@
 
 
 body{
-	background-color: #DB7093;
+	background-color: #ffffff;
 	font-family: 'Merriweather', serif;
 }
 
@@ -15,6 +15,7 @@ body{
 							border-radius: 30%;
 
 }
+
 #facebook1,#facebook2,#facebook3{
 				height: 40%;
 				width: 20%;
@@ -29,7 +30,7 @@ body{
 		padding: 0px 0px 0px 0px;
 	}
 div.menu2{
-		background-color: #eface0;
+		background-color: #ccddff;
 		height: 50px;
 		width: 100%;
 		opacity: 25%;
