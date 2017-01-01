@@ -1,6 +1,6 @@
 <?php
 // open IMAP connection
-$mail = imap_open('{mail.ogonwodoh.com:143/novalidate-cert}INBOX',   'webmaster@ogonwodoh.com', 'Green2014') or die('Cannot connect: ' . imap_last_error());
+$mail = imap_open('{mail.ogonwodoh.com:143/novalidate-cert}INBOX',   'webmaster@ogonwodoh.com', 'PASS') or die('Cannot connect: ' . imap_last_error());
 
 
 // grab a list of all the mail headers
