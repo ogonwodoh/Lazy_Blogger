@@ -3,12 +3,12 @@ The premise behind this application is to make a dynamic blog where someone does
 
 This is how the application works so far: <br>
 <ul>
-<li> A user (for now, me) likes a Facebook page or makes a post on their Tumblr.</li>
+<li> A user (for now, me) likes a Facebook page, likes a YouTube video, or makes a post on their Tumblr.</li>
 <li> On page load, my application queries the Facebook and Tumblr APIs to get a user's recent likes or posts. </li>
 <li> The images of the liked pages or posts are displayed on my page.</li>
 <li> Also, once a day, my application sends out an email to the user asking about a status update. </li>
 <li> The user responds to the email with an update.</li>
-<li> This update is displayed on my blog.</li>
+<li> This update is displayed on the blog.</li>
 </ul>
 
 <strong> Next steps:<em>
