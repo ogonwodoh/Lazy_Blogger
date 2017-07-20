@@ -16,9 +16,6 @@
 		</div>
 
  
-		<?php include 'index.php';
-
-?>
                 <?php include 'mail_action.php';
 ?>
 
@@ -32,14 +29,11 @@
 		<img id="tumblr1" src=""/>
                 <iframe id="player2" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
 		<img id="tumblr3" src=""/>
-		<a href="<?php echo $first_page_link; ?>" > <img id="facebook1" src="<?php echo $pic1; ?>" onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic1; ?>'"/> </a>
 		<img id="tumblr2" src=""/>
 		<img id="tumblr4" src=""/>
                  <iframe id="player3" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
-		<a href="<?php echo $second_page_link; ?>" > <img id="facebook2" src="<?php echo $pic2; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic2; ?>'"/> </a>
 		<img id="tumblr5" src=""/>
 		<img id="tumblr6" src=""/>
-		<a href="<?php echo $third_page_link; ?>" > <img id="facebook3" src="<?php echo $pic3; ?>"onmouseover="this.src='fb_overlay.png'" onmouseout="this.src='<?php echo $pic3; ?>'"/></a>
                 <iframe id="player1" type="text/html" width="320" height="195" border-src="" frameborder="0"></iframe>
                 <br>
                 <br>
